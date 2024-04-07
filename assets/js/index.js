@@ -56,7 +56,7 @@ async function getRandomUser(){
             return valor.slice(0,10);
             });
         const titulo = select.value;
-        const colorDeLinea = "yellow";
+        const colorDeLinea = "#D7AEFB";
         const valores = monedas.serie.map((moneda) => {
         const valor = moneda.valor;
         return Number(valor);
