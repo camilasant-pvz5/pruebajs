@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Conversor de monedas</title>
+</head>
+<body>
+    <main>     
+        <h3 class="head">Conversor de monedas Nacional</h3>
+        <div class="contenedor">
+            <div class="formulario">
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">Pesos CLP</h3>
+                <input type="number" title="Ingreso de Tarea" id="Pesos">
+                <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Moneda a convertir:</h3>
+                <select name="unidad" id="unidad">
+                    <option value="dolar">Dólar USD </option>
+                    <option value="euro">Euro (Є)</option>
+                </select>
+                <br>
+                <br>
+                <button id="Buscar">Buscar</button>
+                <h2 style="font-size: medium; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="resultado"></h2>
+            </div>
+        </div>
+    </main>
+    <br>
+     <h1 class="hist">Historial de monedas</h1>
+     <div class="grafica">
+     <canvas id="myChart"></canvas>
+    </div>
+    <footer>
+        <script src="./assets/js/index.js"></script>  
+    </footer>
+</body>
+</html>
