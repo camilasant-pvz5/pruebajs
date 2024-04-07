@@ -15,14 +15,14 @@ async function getRandomUser(){
          const data = await res.json();
          console.log(data);
          if(aux == "dolar"){
-            let calculo = parseFloat(txtInput.value) / parseFloat(data.serie[0].valor)
+            let calculo = parseFloat(txtInput.value) * parseFloat(data.serie[0].valor)
              resultado.innerHTML = "$ " + Number(calculo.toFixed(3))
              bandera = 1
              renderGrafica()
          }
          
          if(aux == "euro"){
-            let calculo = parseFloat(txtInput.value) / parseFloat(data.serie[0].valor)
+            let calculo = parseFloat(txtInput.value) * parseFloat(data.serie[0].valor)
              resultado.innerHTML = "$ " + Number(calculo.toFixed(3))
              bandera = 1
              renderGrafica()
