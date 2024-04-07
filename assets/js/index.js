@@ -1,5 +1,5 @@
 
-const txtInput = document.querySelector("#Pesos");            
+const txtInput = document.querySelector ("#Pesos");            
 const select = document.getElementById("unidad");               
 const btnConvertir = document.querySelector("#Buscar");          
 const resultado = document.querySelector("#resultado");             
