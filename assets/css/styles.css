@@ -115,7 +115,7 @@ main {
 .star {
   height: 40px;
   opacity: 0;
-  fill: #ff7f7f;
+  fill: #e37fff;
   animation: loader 2s infinite alternate;
 }
 
