@@ -1,116 +1,147 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hist {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000; 
-    text-align: center; 
-    letter-spacing: 1px; 
-    margin-bottom: 20px; 
-  }
-  
-
-main{
-    width: 70%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    border-radius: 13px;
-    color: rgb(229, 234, 238);
-    gap: 30px;}
-
-
-
-    .head {
-        font-size: 36px; 
-        font-weight: bold; 
-        color: #ffffff; 
-        text-align: center; 
-        margin-top: 30px; 
-        margin-bottom: 20px; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-        gap: 5px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-         
-    
-
-
-.contenedor{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
-    width: 350px;
-    height: 250px;
-    text-align: center;
-  
-  
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000; 
+  text-align: center; 
+  letter-spacing: 1px; 
+  margin-bottom: 20px; 
 }
 
-.formulario{
-    padding-top: 20px;
-    width: 100%; 
-    height: 100%;
-    background-color: #6C757D;
-    border-radius: 10px;}
+main {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 13px;
+  color: rgb(229, 234, 238);
+  gap: 30px;
+}
 
-    #Pesos {
-        height: 30px; 
-        width: 200px; 
-        padding: 5px; 
-        border: 1px solid #ccc; 
-        border-radius: 8px; 
-        text-align: center; 
-        font-size: 16px; 
-        color: #333; 
-        background-color: #f4f4f4; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-        outline: none; 
-      }
-      
-      #Pesos:focus {
-        border-color: #6c757d; 
-      }
-      
-    #unidad{
-        width: 180px;
-        height: 30px;
-        border-radius: 5px;
-        text-align: center;
+.head {
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  text-align: center; 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  gap: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-    }
-    #Buscar {
-        width: 100px; 
-        height: 30px; 
-        border-radius: 5px; 
-        background-color: #17ccf0; 
-        color: #fff; 
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-        font-size: 14px; 
-        border: none; 
-        cursor: pointer; 
-        transition: background-color 0.3s; 
-      }
-      
-      #Buscar:hover {
-        background-color: #0fa5bf; 
-      }
-      
-      #Buscar:focus {
-        outline: none; 
-      }
-      
+.contenedor {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  width: 350px;
+  height: 250px;
+  text-align: center;
+}
 
+.formulario {
+  padding-top: 20px;
+  width: 100%; 
+  height: 100%;
+  background-color: #6C757D;
+  border-radius: 10px;
+}
 
-.grafica{
-    width: 800px;
+#Pesos {
+  height: 30px; 
+  width: 200px; 
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  text-align: center; 
+  font-size: 16px; 
+  color: #333; 
+  background-color: #f4f4f4; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  outline: none; 
+}
+
+#Pesos:focus {
+  border-color: #6c757d; 
+}
+
+#unidad {
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#Buscar {
+  width: 100px; 
+  height: 30px; 
+  border-radius: 5px; 
+  background-color: #17ccf0; 
+  color: #fff; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  font-size: 14px; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#Buscar:hover {
+  background-color: #0fa5bf; 
+}
+
+#Buscar:focus {
+  outline: none; 
+}
+
+.grafica {
+  width: 800px;
+}
+
+/* css del spinner de las estrellas  */
+.loader {
+  user-select: none;
+}
+
+.star {
+  height: 40px;
+  opacity: 0;
+  fill: #ff7f7f;
+  animation: loader 2s infinite alternate;
+}
+
+.star2 {
+  height: 10px;
+  margin-left: -10px;
+  animation-delay: 0.25s;
+}
+
+.star3 {
+  height: 10px;
+  margin-left: -15px;
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+      opacity: 0;
+      transform: translateY(0) translateX(50px) rotate(0deg);
+  }
+  10% {
+      opacity: 0;
+      transform: translateY(0) translateX(50px) rotate(0deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(-20px) translateX(0) rotate(360deg);
+  }
 }
